@@ -7,7 +7,7 @@ namespace WebApplication1.Models
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
         {
         }
-        public DbSet<Customer> Customers;
-        public DbSet<TransferProcess> TransferProcesses;
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<TransferProcess> TransferProcesses { get; set; }
     }
 }

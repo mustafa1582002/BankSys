@@ -1,3 +1,4 @@
+using BankSys.Services;
 using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
 
@@ -8,11 +9,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddTransient<ICustomerService,CustomerService>();
+builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddSwaggerGen();
 
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
 options.UseSqlServer(connection));
+
 
 var app = builder.Build();
 

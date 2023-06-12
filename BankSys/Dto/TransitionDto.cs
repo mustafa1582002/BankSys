@@ -1,7 +1,6 @@
-﻿
-namespace WebApplication1.Models
+﻿namespace BankSys.Dto
 {
-    public class TransferProcess
+    public class TransitionDto
     {
         public int id { get; set; }
         public string From { get; set; }
@@ -9,6 +8,5 @@ namespace WebApplication1.Models
         [MaxLength(100)]
         public Double Quantity { get; set; }
         public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
     }
 }

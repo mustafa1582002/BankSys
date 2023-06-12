@@ -1,11 +1,10 @@
-﻿namespace WebApplication1.Models
+﻿namespace BankSys.Dto
 {
-    public class Customer
+    public class CustomerDto
     {
         public int id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public Double Balance { get; set; }
-        public List<TransferProcess> Transition { get; set; }
     }
 }
