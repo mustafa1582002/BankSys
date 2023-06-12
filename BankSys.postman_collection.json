@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "f053aeb5-0656-4fee-b8e2-016375976762",
+		"name": "BankSys",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ViewAllCustomer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7133/api/Customers/viewAll",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7133",
+					"path": [
+						"api",
+						"Customers",
+						"viewAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCustomer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7133/api/Customers/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7133",
+					"path": [
+						"api",
+						"Customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7133/api/Customers",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7133",
+					"path": [
+						"api",
+						"Customers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
