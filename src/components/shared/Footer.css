@@ -1,0 +1,16 @@
+.Footer{
+    position: relative;
+    bottom: 0%;
+    background-color: #1d2226;
+    width: 100%;
+    height: 20vh;
+    margin: 0;
+}
+.Footer p{
+    width: fit-content;
+    color: gray;
+    position: relative;
+    left: 40%;
+    top: 50%;
+    
+}

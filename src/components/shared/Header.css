@@ -1,0 +1,12 @@
+.logo{
+    transition-duration: 1s;
+  
+}
+.logo:hover{
+    transition-delay: 0.3s;
+    color: red ;
+}
+.navbar{
+    height: 10vh;
+    background-color: #1d2226 !important;
+}
