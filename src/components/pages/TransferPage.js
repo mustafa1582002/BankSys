@@ -39,7 +39,7 @@ const TransferPage = (props) => {
 
       SetCustomer({ ...Customer, loading: true });
       axios
-        .post("http://localhost:5249/api/Customers", data, {
+        .post("http://localhost:7133/api/Customers", data, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -67,7 +67,7 @@ const TransferPage = (props) => {
   useEffect(() => {
     SetCustomer({ ...Customer, loading: true });
     axios
-      .get("http://localhost:5249/api/Customers/" + props.CusID)
+      .get("http://localhost:7133/api/Customers/" + props.CusID)
       .then((resp) => {
         SetCustomer({
           ...Customer,

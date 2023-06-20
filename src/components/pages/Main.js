@@ -18,7 +18,7 @@ const Main = () => {
   useEffect(() => {
     SetCustomers({ ...Customers, loading: true });
     axios
-      .get("http://localhost:5249/api/Customers/viewAll")
+      .get("https://localhost:7133/api/Customers/viewAll")//http://localhost:7133/api/Customers/viewAll
       .then((resp) => {
         SetCustomers({
           ...Customers,
